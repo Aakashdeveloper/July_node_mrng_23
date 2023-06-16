@@ -49,4 +49,50 @@ NodejS
 > Single threaded Async non blocking I/O
 
 Open Source
-NPM
+
+
+NPM> Node Package manager
+(Registery)
+
+JSON
+> Javascript Object Notation
+> Way to represent data
+> Key Value pair
+
+[
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Nikita",
+        "city":"Paris"
+    },
+    {
+        "name":"Rohit",
+        "city":"Mumbai",
+        "subject":"NodeJs"
+    }
+]
+
+Package.json
+> Entry point to app
+> This is first file in the application
+> Contains all the packages we are using in app
+> Command start, test
+> Meta Data(Name,version,description)
+
+//Step to generate package.json
+* NodeJs must be installed in laptop
+> Go inside the folder where you want app using terminal/cmd
+> npm init
+> Answer all question
+> Type yes
+
+//Step to install package
+* NodeJs must be installed in laptop
+> Go inside the folder where you want app using terminal/cmd
+> npm i packagename / npm install packagename
+
+
+165046 
