@@ -6,6 +6,7 @@ https://git-scm.com/downloads >>> Install
 
 
 NPM
+/////////////
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
@@ -82,6 +83,11 @@ Package.json
 > Command start, test
 > Meta Data(Name,version,description)
 
+
+package-lock 
+> Dependency tree
+> Conatins child dependency
+
 //Step to generate package.json
 * NodeJs must be installed in laptop
 > Go inside the folder where you want app using terminal/cmd
@@ -96,3 +102,9 @@ Package.json
 
 
 165046 
+165142
+
+Node JS @ 9:00 AM (IST) By Mr.Akash
+Day-1 https://youtu.be/QB8j4fXOAls
+Day-2 https://youtu.be/77Px7GFCjpg
+Day-3 https://youtu.be/4qbMueqwR5E
