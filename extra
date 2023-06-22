@@ -160,3 +160,27 @@ Day-3 https://youtu.be/4qbMueqwR5E
 
 
 
+////////////////////////////////////////////////////////////////
+> Local Dependency
+* Local to the folder
+* We need to install in each application separately
+* npm i packagename
+
+> Dev Dependency
+
+> Global Dependency
+* Intall in C drive
+* Can be use for any application
+* Need admin permission to install
+* Will not added in package.json
+* Only need to generate or run the app
+
+/// step to install global dependencies
+
+# window
+* Open cmd/terminal as admin
+* npm i -g nodemon
+
+# Mac
+* Open terminal
+* sudo npm i -g nodemon
