@@ -3,6 +3,7 @@ https://nodejs.org/en >>>Install
 https://github.com/ >>> CreateAccount
 https://github.com/Aakashdeveloper >>> Follow
 https://git-scm.com/downloads >>> Install
+https://www.mongodb.com/try/download/community > Install
 
 //extension
 vscode-icons
@@ -190,3 +191,16 @@ Day-3 https://youtu.be/4qbMueqwR5E
 # Mac
 * Open terminal
 * sudo npm i -g nodemon
+
+
+//es5
+var a = 10
+var b = "My age is "+a
+"My age is 10"
+
+//es6
+var a = 10
+var b = `My age is ${a}`
+"My age is 10"
+
+Mongo

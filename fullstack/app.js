@@ -1,6 +1,8 @@
 let express = require('express');
 let app = express();
-let port = 8811;
+let dotenv = require('dotenv')
+dotenv.config();
+let port = process.env.PORT || 8811;
 let categoryRouter = require('./src/controller/categoryRouter');
 let productRouter = require('./src/controller/productRouter');
 
@@ -23,5 +25,5 @@ app.use('/products',productRouter)
 // creating server
 app.listen(port, function(err){
     if(err) throw err;
-    console.log('Running on port 8811')
+    console.log(`Running on port ${port}`)
 })
