@@ -204,3 +204,17 @@ var b = `My age is ${a}`
 "My age is 10"
 
 Mongo
+
+var a = 10
+
+a>10 ? "Hii":"Bie"
+
+params
+> What we pass after /
+> We need to define in the url
+> If defined than Complusory to pass
+
+queryParams
+> What we pass after ?
+> No Need to define
+> Not Complusory to pass
