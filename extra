@@ -13,9 +13,9 @@ gitlens
 
 
 NPM
-/////////////
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+/////////////
 Third Party Api (Weather Api)
 Redis v3  > 6379
 Node-Es6(.babel)
@@ -23,12 +23,14 @@ Redis v4
 Redisv4 With Mongov5
 ImageUpload
 ImageUpload(formidable)
+
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
 DashBoard(Crud)
 Swagger
 Testing
+
 Github
 --Deployment of app---
 render
@@ -218,3 +220,42 @@ queryParams
 > What we pass after ?
 > No Need to define
 > Not Complusory to pass
+
+
+
+var > We can redecalre and assign
+let > We cannot redecalre and but can assign
+const > We cannot redecalre and nor assign
+
+
+Type ".help" for more information.
+> var a = 10
+undefined
+> a
+10
+> var a = 11
+undefined
+> a
+11
+> a = 11
+11
+> a = 12
+12
+> a
+12
+> let b = 10
+undefined
+> b
+10
+> let b = 11
+Uncaught SyntaxError: Identifier 'b' has already been declared
+> b = 11
+11
+> const  c =10
+undefined
+> c
+10
+> const  c =11
+Uncaught SyntaxError: Identifier 'c' has already been declared
+> c =11
+Uncaught TypeError: Assignment to constant variable.
