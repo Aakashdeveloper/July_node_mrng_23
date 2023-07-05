@@ -259,3 +259,13 @@ undefined
 Uncaught SyntaxError: Identifier 'c' has already been declared
 > c =11
 Uncaught TypeError: Assignment to constant variable.
+
+
+////Redis
+KEYS *
+set key value
+get keyname
+del keyname
+FLUSHALL
+
+set keyname value ex time
