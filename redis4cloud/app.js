@@ -5,8 +5,11 @@ let port = 7011;
 let app = express();
 
 let client = createClient({
-    host:'localhost',
-    port:6379
+    password: 'EmF1pnbkFZZHagBtyJMxEZLjqxGoL5OZ',
+    socket: {
+        host: 'redis-13076.c74.us-east-1-4.ec2.cloud.redislabs.com',
+        port: 13076
+    }
 })
 
 client.on('error',err => console.log(`Redis Client Error`,err))
