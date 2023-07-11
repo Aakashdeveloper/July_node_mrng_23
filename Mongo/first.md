@@ -96,3 +96,20 @@ db.user.createIndex({"name":1},{unique:true})
 
 
 db.catgeory.drop()
+
+
+
+///cloud setup
+Database access > Add New Database User > Provide username+password
+Builtin-role > Atlas Admin > Add User
+
+
+Network Access> Add IP Address >  0.0.0.0/0 > Confirm
+
+
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+mongodb+srv://test:abc@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+
+

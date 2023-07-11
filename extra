@@ -11,6 +11,9 @@ tabnine
 githistory
 gitlens
 
+JavaScript
+Ifelse,Function,object,JSON,Variables
+
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
@@ -21,9 +24,10 @@ Redis v3  > 6379
 Redis v4
 Redis Cloud
 Redisv4 With Mongov5
-/////////////
 ImageUpload
 ImageUpload(formidable)
+/////////////
+
 
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
