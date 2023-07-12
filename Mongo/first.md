@@ -111,5 +111,90 @@ mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true
 
 mongodb+srv://test:abc@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
 
+db.restaurants.find({"mealTypes.mealtype_id":1})
 
 
+db.restaurants.find({state_id:1}).pretty()
+
+
+db.restaurants.find({condition},{projection}).pretty()
+
+db.restaurants.find({state_id:1},{restaurant_name:1,address:1}).pretty()
+
+db.restaurants.find({state_id:1},{restaurant_name:1,address:1,_id:0}).pretty()
+
+
+db.restaurants.find({"mealTypes.mealtype_id":1},{restaurant_name:1,mealTypes:1,_id:0})
+
+
+db.restaurants.find({},{restaurant_name:1,mealTypes:1,_id:0})
+
+db.restaurants.find({"mealTypes.mealtype_id":{$in:[1,4,5]}},{restaurant_name:1,mealTypes:1,_id:0})
+
+
+db.restaurants.find({
+    $and:[
+        {"mealTypes.mealtype_id":1},
+        {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,_id:0,cuisines:1}).pretty()
+
+
+db.restaurants.find({
+    $or:[
+        {"mealTypes.mealtype_id":1},
+        {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,_id:0,cuisines:1}).pretty()
+
+
+
+db.restaurants.find({state_id:1},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).pretty()
+
+
+
+db.restaurants.find({state_id:1},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).skip(1).pretty()
+
+1-2
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).skip(0).limit(2).pretty()
+
+3-4
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).skip(2).limit(2).pretty()
+
+5-6
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).skip(4).limit(2).pretty()
+
+
+
+db.restaurants.find({cost:{$lt:500}},{restaurant_name:1,address:1,cost:1}).pretty()
+
+
+db.restaurants.find({cost:{$gt:500,$lt:1000}},{restaurant_name:1,address:1,cost:1}).pretty()
+
+
+////////Aggregartion 
+> $match It is used for filtrting document (condition as like in find)
+> $project It will select some specifi fields from a collection 
+> $group it is used to group document on based on some values 
+> $sort Its is used to sort the data 
+> $skip Skip number of documents 
+> $limit To retrive number of documents 
+> $unwind Deconstructs an array, like flat the array 
+> $out Is to write the document output
+
+db.orders.insert([ { "_id" : 1, "item" : "almonds", "price" : 12, "quantity" : 2 }, { "_id" : 2, "item" : "pecans", "price" : 20, "quantity" : 1 }, { "_id" : 3 } ])
+
+db.inventory.insert([ { "_id" : 1, "sku" : "almonds", description: "product 1", "instock" : 120 }, { "_id" : 2, "sku" : "bread", description: "product 2", "instock" : 80 }, { "_id" : 3, "sku" : "cashews", description: "product 3", "instock" : 60 }, { "_id" : 4, "sku" : "pecans", description: "product 4", "instock" : 70 }, { "_id" : 5, "sku": null, description: "Incomplete" }, { "_id" : 6 } ])
+
+db.inventory.insert([ { "_id" : 7, "sku" : "almonds", description: "American Almonds", "instock" : 10 } ])
+
+
+
+db.orders.aggregate([
+    {$lookup:{
+        from:'inventory',
+        localField:'item',
+        foreignField:'sku',
+        as:'combine_data'
+    }}
+])
