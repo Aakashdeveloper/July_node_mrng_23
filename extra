@@ -274,3 +274,11 @@ del keyname
 FLUSHALL
 
 set keyname value ex time
+
+C > Create
+R > Read
+U > Update
+D > Delete
+
+CORS
+Cross origin resource sharing

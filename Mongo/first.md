@@ -198,3 +198,35 @@ db.orders.aggregate([
         as:'combine_data'
     }}
 ])
+
+//update
+db.collection.update(
+    {condition},
+    {values}
+)
+
+db.user.update(
+    {"name":"Nikita"},
+    {
+        $set:{
+            "role":"User",
+            "city":"Paris"
+        }
+    }
+)
+
+db.user.update(
+    {"name":"Nikita"},
+    {
+        $unset:{
+            "role":1
+        }
+    }
+)
+
+// Delete
+//remove all
+db.user.remove({})
+
+//delete particuler
+db.user.remove({"name":"Nikita"})
