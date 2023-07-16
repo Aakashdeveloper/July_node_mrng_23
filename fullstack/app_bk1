@@ -1,0 +1,116 @@
+let express = require('express');
+let app = express();
+let port = 8811;
+
+const category = [
+    {
+        "id":1,
+        "category": "Fashion",
+        "thumb":"https://i.ibb.co/56VP0Fn/cloths.jpg"
+    },
+    {
+        "id":2,
+        "category":"Electronics",
+        "thumb":"https://i.ibb.co/pw5Wtdx/appliances.jpg"
+    },
+    {
+        "id":3,
+        "category":"Essentials",
+        "thumb":"https://i.ibb.co/0cw34xm/essentials.jpg"
+    },
+    {
+        "id":4,
+        "category": "Footwear",
+        "thumb":"https://i.ibb.co/r3SZq8S/footware.jpg"
+    }
+]
+
+const Products = [
+    {
+        "id": 1,
+        "product_name": "Girls top",
+        "category": "Fashion",
+        "category_id": 1,
+        "Price": 2000,
+        "Size": "Small",
+        "Image": "https://i.ibb.co/fHj5Tgc/download.jpg",
+        "Color": "Maroon",
+        "Brand": "Gucci"
+    },
+    {
+        "id": 2,
+        "product_name": "Girls top",
+        "category": "Fashion",
+        "category_id": 1,
+        "Price": 1500,
+        "Size": "Medium",
+        "Image": "https://i.ibb.co/tsXyK5Y/images.jpg",
+        "Color": "Blue",
+        "Brand": "Westside"
+    },
+    {
+        "id": 3,
+        "product_name": "Girls top",
+        "category": "Fashion",
+        "category_id": 1,
+        "Price": 2000,
+        "Size": "Large",
+        "Image": "https://i.ibb.co/NsVKKdd/images-1.jpg",
+        "Color": "Pink",
+        "Brand": "H&M"
+    },
+    {
+        "id": 4,
+        "product_name": "Girls top",
+        "category": "Fashion",
+        "category_id": 1,
+        "Price": 500,
+        "Size": "Medium",
+        "Image": "https://i.ibb.co/5Fwh8ys/Blue.jpg",
+        "Color": "Blue",
+        "Brand": "H&M"
+    },
+    {
+        "id": 5,
+        "product_name": "Girls top",
+        "category": "Fashion",
+        "category_id": 1,
+        "Price": 2500,
+        "Size": "Large",
+        "Image": "https://i.ibb.co/sbtyWMs/WHite.jpg",
+        "Color": "White",
+        "Brand": "Gucci"
+    }
+]
+
+//routes
+
+//Default route
+app.get('/',function(req,res){
+    res.send('Hii From Default Server')
+})
+
+app.get('/category',(req,res) => {
+    res.send(category)
+})
+
+
+
+app.get('/details',(req,res) => {
+    res.send('This is category details')
+})
+
+app.get('/products',(req,res) => {
+    res.send(Products)
+})
+
+app.get('/details',(req,res) => {
+    res.send('This is product details')
+})
+
+
+// creating server
+app.listen(port, function(err){
+    if(err) throw err;
+    console.log('Running on port 8811')
+})

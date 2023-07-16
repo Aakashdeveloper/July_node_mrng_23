@@ -1,0 +1,284 @@
+https://code.visualstudio.com/ >>> Install
+https://nodejs.org/en >>>Install
+https://github.com/ >>> CreateAccount
+https://github.com/Aakashdeveloper >>> Follow
+https://git-scm.com/downloads >>> Install
+https://www.mongodb.com/try/download/community > Install
+
+//extension
+vscode-icons
+tabnine
+githistory
+gitlens
+
+JavaScript
+Ifelse,Function,object,JSON,Variables
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+Third Party Api (Weather Api)
+Node-Es6(.babel)
+Redis v3  > 6379
+Redis v4
+Redis Cloud
+Redisv4 With Mongov5
+ImageUpload
+ImageUpload(formidable)
+/////////////
+
+
+MongoDb Basic >27017  (local/cloud)
+Zomato App backend
+Api with NodeJS(Rest)>1
+DashBoard(Crud)
+Swagger
+Testing
+
+Github
+--Deployment of app---
+render
+Pm2
+Nginx
+Jenkins
+Docker
+Email With Node(nodemailer)
+Login/Logout(JWT)
+Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+Oauth(with google)
+TelegramChat
+GraphQl API
+Paytm-Payment
+Chatapp
+NodeJs with postgres
+FIREBASE
+S3 Imageupload
+AWS lambda micorservice
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+
+NodejS
+> Single threaded Async non blocking I/O
+
+Open Source
+
+
+NPM> Node Package manager
+(Registery)
+
+JSON
+> Javascript Object Notation
+> Way to represent data
+> Key Value pair
+
+[
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Nikita",
+        "city":"Paris"
+    },
+    {
+        "name":"Rohit",
+        "city":"Mumbai",
+        "subject":"NodeJs"
+    }
+]
+
+Package.json
+> Entry point to app
+> This is first file in the application
+> Contains all the packages we are using in app
+> Command start, test
+> Meta Data(Name,version,description)
+
+
+package-lock 
+> Dependency tree
+> Conatins child dependency
+
+//Step to generate package.json
+* NodeJs must be installed in laptop
+> Go inside the folder where you want app using terminal/cmd
+> npm init
+> Answer all question
+> Type yes
+
+//Step to install package
+* NodeJs must be installed in laptop
+> Go inside the folder where you want app using terminal/cmd
+> npm i packagename / npm install packagename
+
+
+165046 
+165142
+
+function
+////
+es5> Ecma Script 5
+es6> Ecma Script 6
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+//es6
+let add = (a,b) => {return a+b}
+
+
+Do remember everyone student's tomorrow is the last demo..so link will be change..so that as Early as possible do the payment...👍👍
+Node Js Mr. Akash @  9:00am 
+Fee- 5,000/- (including GST) without
+videos 
+Fee:- 8,000/- (including GST)with videos  videos validity After course extra 6 months only  
+(  payment validity will be 6 months only /- ) 
+
+( If in case any medical issue or timing issue only batch shifting will applicable ) 
+
+ONCE FEE PAID WONT GET REFUND Payment valid for 6 months only 
+
+PAYMENT link :- 
+https://rzp.io/l/Naresh-IT
+
+  
+Payment Details 👇
+Bank Details :- 
+Name: Naresh I Technologies
+A/C No. 50200022639833     
+Bank: HDFC
+A/C Type: Current Account
+IFSC Code: HDFC0001627
+MICR Code: 500240035
+Branch Code: 001627
+Branch:  Ameerpet
+
+Note: If you want to use Phonepe or Google Pay then follow  below steps
+You can find the option Bank Transfer in Phonepe and Google pay. There you can enter our bank account number and you can transfer the amount. 
+
+Please mention your Name on the receipt and send a email once the payment is done send the payment screenshot  to support@nareshit.com and also to 
+  
+        ADMIN PRASAD -9154861175
+If u want eny doubts and eny enquiry.so plz text me in WhatsApp.
+
+
+Node JS @ 9:00 AM (IST) By Mr.Akash
+Day-1 https://youtu.be/QB8j4fXOAls
+Day-2 https://youtu.be/77Px7GFCjpg
+Day-3 https://youtu.be/4qbMueqwR5E
+
+
+
+////////////////////////////////////////////////////////////////
+> Local Dependency
+* Local to the folder
+* We need to install in each application separately
+* npm i packagename
+
+> Dev Dependency
+
+> Global Dependency
+* Intall in C drive
+* Can be use for any application
+* Need admin permission to install
+* Will not added in package.json
+* Only need to generate or run the app
+
+/// step to install global dependencies
+
+# window
+* Open cmd/terminal as admin
+* npm i -g nodemon
+
+# Mac
+* Open terminal
+* sudo npm i -g nodemon
+
+
+//es5
+var a = 10
+var b = "My age is "+a
+"My age is 10"
+
+//es6
+var a = 10
+var b = `My age is ${a}`
+"My age is 10"
+
+Mongo
+
+var a = 10
+
+a>10 ? "Hii":"Bie"
+
+params
+> What we pass after /
+> We need to define in the url
+> If defined than Complusory to pass
+
+queryParams
+> What we pass after ?
+> No Need to define
+> Not Complusory to pass
+
+
+
+var > We can redecalre and assign
+let > We cannot redecalre and but can assign
+const > We cannot redecalre and nor assign
+
+
+Type ".help" for more information.
+> var a = 10
+undefined
+> a
+10
+> var a = 11
+undefined
+> a
+11
+> a = 11
+11
+> a = 12
+12
+> a
+12
+> let b = 10
+undefined
+> b
+10
+> let b = 11
+Uncaught SyntaxError: Identifier 'b' has already been declared
+> b = 11
+11
+> const  c =10
+undefined
+> c
+10
+> const  c =11
+Uncaught SyntaxError: Identifier 'c' has already been declared
+> c =11
+Uncaught TypeError: Assignment to constant variable.
+
+
+////Redis
+KEYS *
+set key value
+get keyname
+del keyname
+FLUSHALL
+
+set keyname value ex time
+
+C > Create
+R > Read
+U > Update
+D > Delete
+
+CORS
+Cross origin resource sharing
